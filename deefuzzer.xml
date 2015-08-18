@@ -1,0 +1,72 @@
+<deefuzzer>
+    <log>/home/radio/deef/station.log</log>
+    <m3u>/home/radio/music/music.m3u</m3u>
+    <stationdefaults>
+        <control>
+            <mode>0</mode>
+            <port>16001</port>
+        </control>
+        <jingles>
+            <dir>/home/radio/music/play</dir>
+            <mode>0</mode>
+            <shuffle>1</shuffle>
+        </jingles>
+    </stationdefaults>
+    <station>
+        <control>
+            <mode>0</mode>
+            <port>16001</port>
+        </control>
+        <infos>
+            <description>My personal best funky playlist ever !</description>
+            <genre>Various Funk Groove</genre>
+            <name>My best funky station</name>
+            <short_name>My_station</short_name>
+            <url>http://parisson.com</url>
+        </infos>
+        <jingles>
+            <dir>/home/radio/music/play</dir>
+            <mode>0</mode>
+            <shuffle>1</shuffle>
+        </jingles>
+        <media>
+            <bitrate>96</bitrate>
+            <source>/home/radio/music/music.m3u</source>
+            <format>mp3</format>
+            <ogg_quality>4</ogg_quality>
+            <samplerate>48000</samplerate>
+            <shuffle>0</shuffle>
+            <voices>2</voices>
+        </media>
+        <record>
+            <dir>/home/radio/music/record</dir>
+            <mode>0</mode>
+        </record>
+        <relay>
+            <author>Unknown</author>
+            <mode>0</mode>
+            <url>http://127.0.0.1:8000/stream2</url>
+        </relay>
+        <feeds>
+            <mode>1</mode>
+            <rss>1</rss>
+            <json>0</json>
+            <playlist>1</playlist>
+            <dir>/path/to/rss/</dir>
+            <enclosure>1</enclosure>
+            <media_url></media_url>
+        </feeds>
+        <server>
+            <host>127.0.0.1</host>
+            <mountpoint>stream2</mountpoint>
+            <port>8000</port>
+            <public>0</public>
+            <sourcepassword>new1</sourcepassword>
+            <type>icecast</type>
+            <appendtype>1</appendtype>
+        </server>
+    </station>
+
+</deefuzzer>
+
+

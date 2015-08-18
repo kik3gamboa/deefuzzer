@@ -1,2 +1,0 @@
-# deefuzzer
-deefuzzer.xml
